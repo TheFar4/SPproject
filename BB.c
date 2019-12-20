@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
 	int B = getpid();
 	printf("Pid %d Code BB: Creating file XYZ.txt and write data to the file\n", B);
 
-	int fpxyz, xyAddr, rSize;
-	char *buf[200];
+	int fpxyz;
 
 	fpxyz = creat("XYZ.txt", PERMS);
 	if (fpxyz < 0)
